@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Taiwan-travel</title>
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <header class="home-header bg-white">
+            <nav class="navbar container">
+                <a class="navbar-brand" href="">
+                    <img src="./img/Logo.png" alt=""></a>
+                <div class="nav">
+                    <a class=" link1" href="./index.html"><img src="./img/Attractions-icon.png" alt="">
+                        台灣景點
+                    </a>
+                    <a class=" link2" href="./food&stay.html"><img src="./img/delicacy-icon.png" alt="">
+                        美食住宿
+                    </a>
+                    <a class=" link3" href="./img/Traffic-icon.png"><img src="./img/Traffic-icon.png" alt="">
+                        景點交通
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <section class="bg-white">
+            <div class="home-banner">
+                <img class="m-auto home-banner-img" src="./img/Mask Group.png">
+                <div class="home-banner-wrap">
+                    <img src="./img/Home-welcme.png" alt="">
+                    <p class="text-white">台北、台中、台南、屏東、宜蘭……遊遍台灣</p>
+                    <form class="home-banner-wrap-form" action="">
+
+                        <input class="form-control" type="text" name="" id="" placeholder="搜尋關鍵字">
+                        <div class="d-flex form-wrap">
+                            <select class="form-select " name="" id="">
+                                <option selected>類別</option>
+                                <option value="1">活動</option>
+                                <option value="2">景點</option>
+                            </select>
+                            <select class="form-select " name="" id="">
+                                <option selected>不分縣市</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <button class="btn form-btn">
+                                <img src="./img/search-icon.png" alt="">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button> -->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="true" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                <div class="Backdrop-modal">
+                    <div class="pic">
+                        <img class="img-fluid" src="./img/backdorp.png" alt="">
+                    </div>
+                    <h2>合歡山國際暗空公園-星空清境跨年活動</h2>
+                    <p>南投縣與各單位多年於合歡山舉辦清境高山跨年晚會活動，今年將活動主軸由傳統跨年晚會轉化成為台灣高山星空遊程之體驗活動，在擁有東南亞區最佳的星空觀測環境。奇特造型，值得深入觀賞體會。</p>
+                    <div class="d-flex info">
+                        <p><img src="./img/Clock.png" alt="">開放式空間，無時間限制</p>
+                        <p><img src="./img/Fill-1.png" alt="">886-2-24287664</p>
+                        <p><img src="./img/Shape.png" alt="">免費</p>
+                        <p><img src="./img/Subtract.png" alt="">基隆市中山區湖海路一、二段(協和街)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <main class="m-auto container ">
+        <div class="m-auto " style="max-width: 1062px; position: relative;">
+            <div class="city-list">
+                <h2 class="title"><img src="./img/Attractions-icon2.png" alt="">熱門城市</h2>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <a href="#">
+                                <div class="city-list-card">
+                                    <img class="img-fluid" src="./img/Pictures of Taipei.png" alt="">
+                                    <div class="city-list-mask">
+                                        <img src="./img/map_M.png" alt="">
+                                        <h2>台北市</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide " style="flex-direction: column; ">
+                            <a href="#">
+                                <div class="city-list-cards">
+                                    <img class="img-fluid" src="./img/Pictures of New Taipei City.png" alt="">
+                                    <div class="city-list-mask">
+                                        <img src="./img/map_M.png" alt="">
+                                        <h2>新北市</h2>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="city-list-cards">
+                                    <img class="img-fluid" src="./img/Pictures of Taoyuan City.png" alt="">
+                                    <div class="city-list-mask">
+                                        <img src="./img/map_M.png" alt="">
+                                        <h2>桃園市</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="city-list-card">
+                                <img class="img-fluid" src="./img/Pictures of Taipei.png" alt="">
+                                <div class="city-list-mask">
+                                    <img src="./img/map_M.png" alt="">
+                                    <h2>台北市</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide " style="flex-direction: column; ">
+                            <div class="city-list-cards">
+                                <img class="img-fluid" src="./img/Pictures of New Taipei City.png" alt="">
+                                <div class="city-list-mask">
+                                    <img src="./img/map_M.png" alt="">
+                                    <h2>新北市</h2>
+                                </div>
+                            </div>
+                            <div class="city-list-cards">
+                                <img class="img-fluid" src="./img/Pictures of Taoyuan City.png" alt="">
+                                <div class="city-list-mask">
+                                    <img src="./img/map_M.png" alt="">
+                                    <h2>桃園市</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="city-list-card">
+                                <img class="img-fluid" src="./img/Pictures of Taipei.png" alt="">
+                                <div class="city-list-mask">
+                                    <img src="./img/map_M.png" alt="">
+                                    <h2>台北市</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="city-list-card">
+                                <img class="img-fluid" src="./img/Pictures of Taipei.png" alt="">
+                                <div class="city-list-mask">
+                                    <img src="./img/map_M.png" alt="">
+                                    <h2>台北市</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide " style="flex-direction: column; ">
+                            <div class="city-list-cards">
+                                <img class="img-fluid" src="./img/Pictures of New Taipei City.png" alt="">
+                                <div class="city-list-mask">
+                                    <img src="./img/map_M.png" alt="">
+                                    <h2>新北市</h2>
+                                </div>
+                            </div>
+                            <div class="city-list-cards">
+                                <img class="img-fluid" src="./img/Pictures of Taoyuan City.png" alt="">
+                                <div class="city-list-mask">
+                                    <img src="./img/map_M.png" alt="">
+                                    <h2>桃園市</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="city-list-card">
+                                <img class="img-fluid" src="./img/Pictures of Taipei.png" alt="">
+                                <div class="city-list-mask">
+                                    <img src="./img/map_M.png" alt="">
+                                    <h2>台北市</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide " style="flex-direction: column; ">
+                            <div class="city-list-cards">
+                                <img class="img-fluid" src="./img/Pictures of New Taipei City.png" alt="">
+                                <div class="city-list-mask">
+                                    <img src="./img/map_M.png" alt="">
+                                    <h2>新北市</h2>
+                                </div>
+                            </div>
+                            <div class="city-list-cards">
+                                <img class="img-fluid" src="./img/Pictures of Taoyuan City.png" alt="">
+                                <div class="city-list-mask">
+                                    <img src="./img/map_M.png" alt="">
+                                    <h2>桃園市</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="Activety">
+                <h2 class="title"><img src="./img/Attractions-icon2.png" alt="">熱門活動</h2>
+                <div class="Activety-warp">
+                    <div class="Activety-card">
+                        <div class="wrap-left">
+                            <img src="./img/Activity 1.png" alt="">
+                        </div>
+                        <div class="wrap-right">
+                            <h2>合歡山國際暗空公園-星空清境跨年活動</h2>
+                            <p>南投縣與各單位多年於合歡山舉辦清境高山跨年晚會活動，今年將活動主軸由傳統跨年晚會轉化成為台灣高山星空遊程之體驗活動，以剛通過美國IDA認證的華語區第一座國際暗空公園作為宣傳主題，在擁有東南的的...
+                            </p>
+                            <div>
+                                <img src="./img/Subtract.png" alt="">
+                                <h2>南投縣 仁愛鄉</h2>
+                                <button class="btn" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">活動詳情</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Activety-card">
+                        <div class="wrap-left">
+                            <img src="./img/Activity 1.png" alt="">
+                        </div>
+                        <div class="wrap-right">
+                            <h2>合歡山國際暗空公園-星空清境跨年活動</h2>
+                            <p>南投縣與各單位多年於合歡山舉辦清境高山跨年晚會活動，今年將活動主軸由傳統跨年晚會轉化成為台灣高山星空遊程之體驗活動，以剛通過美國IDA認證的華語區第一座國際暗空公園作為宣傳主題，在擁有東南的的...
+                            </p>
+                            <div>
+                                <img src="./img/Subtract.png" alt="">
+                                <h2>南投縣 仁愛鄉</h2>
+                                <button class="btn" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">活動詳情</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Activety-card">
+                        <div class="wrap-left">
+                            <img src="./img/Activity 1.png" alt="">
+                        </div>
+                        <div class="wrap-right">
+                            <h2>合歡山國際暗空公園-星空清境跨年活動</h2>
+                            <p>南投縣與各單位多年於合歡山舉辦清境高山跨年晚會活動，今年將活動主軸由傳統跨年晚會轉化成為台灣高山星空遊程之體驗活動，以剛通過美國IDA認證的華語區第一座國際暗空公園作為宣傳主題，在擁有東南的的...
+                            </p>
+                            <div>
+                                <img src="./img/Subtract.png" alt="">
+                                <h2>南投縣 仁愛鄉</h2>
+                                <button class="btn" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">活動詳情</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Activety-card">
+                        <div class="wrap-left">
+                            <img src="./img/Activity 1.png" alt="">
+                        </div>
+                        <div class="wrap-right">
+                            <h2>合歡山國際暗空公園-星空清境跨年活動</h2>
+                            <p>南投縣與各單位多年於合歡山舉辦清境高山跨年晚會活動，今年將活動主軸由傳統跨年晚會轉化成為台灣高山星空遊程之體驗活動，以剛通過美國IDA認證的華語區第一座國際暗空公園作為宣傳主題，在擁有東南的的...
+                            </p>
+                            <div>
+                                <img src="./img/Subtract.png" alt="">
+                                <h2>南投縣 仁愛鄉</h2>
+                                <button class="btn" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">活動詳情</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="food">
+                <h2 class="title"><img src="./img/delicacy-icon2.png" alt="">熱門活動</h2>
+                <div class="food-wrap">
+                    <div class="food-card">
+                        <img src="./img/unsplash_F-lUB3k79z0.png" alt="">
+                        <p>雲林 / 馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</p>
+                        <div>
+                            <img src="./img/Subtract.png" alt="">
+                            <p>基隆市中正區</p>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <img src="./img/unsplash_F-lUB3k79z0.png" alt="">
+                        <p>雲林 / 馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</p>
+                        <div>
+                            <img src="./img/Subtract.png" alt="">
+                            <p>基隆市中正區</p>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <img src="./img/unsplash_F-lUB3k79z0.png" alt="">
+                        <p>雲林 / 馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</p>
+                        <div>
+                            <img src="./img/Subtract.png" alt="">
+                            <p>基隆市中正區</p>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <img src="./img/unsplash_F-lUB3k79z0.png" alt="">
+                        <p>雲林 / 馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</p>
+                        <div>
+                            <img src="./img/Subtract.png" alt="">
+                            <p>基隆市中正區</p>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <img src="./img/unsplash_F-lUB3k79z0.png" alt="">
+                        <p>雲林 / 馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</p>
+                        <div>
+                            <img src="./img/Subtract.png" alt="">
+                            <p>基隆市中正區</p>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <img src="./img/unsplash_F-lUB3k79z0.png" alt="">
+                        <p>雲林 / 馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</p>
+                        <div>
+                            <img src="./img/Subtract.png" alt="">
+                            <p>基隆市中正區</p>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <img src="./img/unsplash_F-lUB3k79z0.png" alt="">
+                        <p>雲林 / 馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</p>
+                        <div>
+                            <img src="./img/Subtract.png" alt="">
+                            <p>基隆市中正區</p>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <img src="./img/unsplash_F-lUB3k79z0.png" alt="">
+                        <p>雲林 / 馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</p>
+                        <div>
+                            <img src="./img/Subtract.png" alt="">
+                            <p>基隆市中正區</p>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <img src="./img/unsplash_F-lUB3k79z0.png" alt="">
+                        <p>雲林 / 馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</p>
+                        <div>
+                            <img src="./img/Subtract.png" alt="">
+                            <p>基隆市中正區</p>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <img src="./img/unsplash_F-lUB3k79z0.png" alt="">
+                        <p>雲林 / 馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</p>
+                        <div>
+                            <img src="./img/Subtract.png" alt="">
+                            <p>基隆市中正區</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+    <footer class="text-center bg-white">
+        <p>Taiwan Tourguide © Code: Mason / Design: KT</p>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            slidesPerColumnFill: 'row',
+            hideOnClick: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 10,
+                },
+                361: {
+                    slidesPerView: 4.2,
+                    spaceBetween: 10,
+                },
+                769: {
+                    slidesPerView: 5,
+                    spaceBetween: 10,
+                },
+
+            },
+        });
+    </script>
+</body>
+
+</html>
